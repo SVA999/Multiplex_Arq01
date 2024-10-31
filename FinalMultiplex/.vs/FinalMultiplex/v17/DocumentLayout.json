@@ -1,0 +1,180 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Programing\\ProyectosUPB\\Final-POO\\FinalMultiplex\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EDDD3435-8DAF-42EC-B327-15C0FF8B5C35}|..\\b_Multiplex\\b_Multiplex.csproj|d:\\programing\\proyectosupb\\final-poo\\b_multiplex\\clases\\platino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDDD3435-8DAF-42EC-B327-15C0FF8B5C35}|..\\b_Multiplex\\b_Multiplex.csproj|d:\\programing\\proyectosupb\\final-poo\\b_multiplex\\clases\\oro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDDD3435-8DAF-42EC-B327-15C0FF8B5C35}|..\\b_Multiplex\\b_Multiplex.csproj|d:\\programing\\proyectosupb\\final-poo\\b_multiplex\\clases\\normal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDDD3435-8DAF-42EC-B327-15C0FF8B5C35}|..\\b_Multiplex\\b_Multiplex.csproj|d:\\programing\\proyectosupb\\final-poo\\b_multiplex\\clases\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDDD3435-8DAF-42EC-B327-15C0FF8B5C35}|..\\b_Multiplex\\b_Multiplex.csproj|d:\\programing\\proyectosupb\\final-poo\\b_multiplex\\clases\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDDD3435-8DAF-42EC-B327-15C0FF8B5C35}|..\\b_Multiplex\\b_Multiplex.csproj|d:\\programing\\proyectosupb\\final-poo\\b_multiplex\\clases\\taquillero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDDD3435-8DAF-42EC-B327-15C0FF8B5C35}|..\\b_Multiplex\\b_Multiplex.csproj|d:\\programing\\proyectosupb\\final-poo\\b_multiplex\\clases\\espectador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDDD3435-8DAF-42EC-B327-15C0FF8B5C35}|..\\b_Multiplex\\b_Multiplex.csproj|d:\\programing\\proyectosupb\\final-poo\\b_multiplex\\clases\\funcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDDD3435-8DAF-42EC-B327-15C0FF8B5C35}|..\\b_Multiplex\\b_Multiplex.csproj|d:\\programing\\proyectosupb\\final-poo\\b_multiplex\\clases\\multiplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDDD3435-8DAF-42EC-B327-15C0FF8B5C35}|..\\b_Multiplex\\b_Multiplex.csproj|d:\\programing\\proyectosupb\\final-poo\\b_multiplex\\b_multiplex.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Platino.cs",
+              "DocumentMoniker": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\Clases\\Platino.cs",
+              "RelativeDocumentMoniker": "..\\b_Multiplex\\Clases\\Platino.cs",
+              "ToolTip": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\Clases\\Platino.cs",
+              "RelativeToolTip": "..\\b_Multiplex\\Clases\\Platino.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T16:35:07.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Oro.cs",
+              "DocumentMoniker": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\Clases\\Oro.cs",
+              "RelativeDocumentMoniker": "..\\b_Multiplex\\Clases\\Oro.cs",
+              "ToolTip": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\Clases\\Oro.cs",
+              "RelativeToolTip": "..\\b_Multiplex\\Clases\\Oro.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T16:34:53.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Normal.cs",
+              "DocumentMoniker": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\Clases\\Normal.cs",
+              "RelativeDocumentMoniker": "..\\b_Multiplex\\Clases\\Normal.cs",
+              "ToolTip": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\Clases\\Normal.cs",
+              "RelativeToolTip": "..\\b_Multiplex\\Clases\\Normal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T16:34:45.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Sala.cs",
+              "DocumentMoniker": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\Clases\\Sala.cs",
+              "RelativeDocumentMoniker": "..\\b_Multiplex\\Clases\\Sala.cs",
+              "ToolTip": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\Clases\\Sala.cs",
+              "RelativeToolTip": "..\\b_Multiplex\\Clases\\Sala.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T16:34:29.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pelicula.cs",
+              "DocumentMoniker": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\Clases\\Pelicula.cs",
+              "RelativeDocumentMoniker": "..\\b_Multiplex\\Clases\\Pelicula.cs",
+              "ToolTip": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\Clases\\Pelicula.cs",
+              "RelativeToolTip": "..\\b_Multiplex\\Clases\\Pelicula.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T16:34:22.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Taquillero.cs",
+              "DocumentMoniker": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\Clases\\Taquillero.cs",
+              "RelativeDocumentMoniker": "..\\b_Multiplex\\Clases\\Taquillero.cs",
+              "ToolTip": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\Clases\\Taquillero.cs",
+              "RelativeToolTip": "..\\b_Multiplex\\Clases\\Taquillero.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T16:34:13.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Espectador.cs",
+              "DocumentMoniker": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\Clases\\Espectador.cs",
+              "RelativeDocumentMoniker": "..\\b_Multiplex\\Clases\\Espectador.cs",
+              "ToolTip": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\Clases\\Espectador.cs",
+              "RelativeToolTip": "..\\b_Multiplex\\Clases\\Espectador.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T16:34:04.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Funcion.cs",
+              "DocumentMoniker": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\Clases\\Funcion.cs",
+              "RelativeDocumentMoniker": "..\\b_Multiplex\\Clases\\Funcion.cs",
+              "ToolTip": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\Clases\\Funcion.cs",
+              "RelativeToolTip": "..\\b_Multiplex\\Clases\\Funcion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T16:33:53.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Multiplex.cs",
+              "DocumentMoniker": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\Clases\\Multiplex.cs",
+              "RelativeDocumentMoniker": "..\\b_Multiplex\\Clases\\Multiplex.cs",
+              "ToolTip": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\Clases\\Multiplex.cs",
+              "RelativeToolTip": "..\\b_Multiplex\\Clases\\Multiplex.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T16:33:42.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "b_Multiplex",
+              "DocumentMoniker": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\b_Multiplex.csproj",
+              "RelativeDocumentMoniker": "..\\b_Multiplex\\b_Multiplex.csproj",
+              "ToolTip": "D:\\Programing\\ProyectosUPB\\Final-POO\\b_Multiplex\\b_Multiplex.csproj",
+              "RelativeToolTip": "..\\b_Multiplex\\b_Multiplex.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-31T16:31:01.259Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
