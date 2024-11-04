@@ -8,5 +8,30 @@ namespace b_Multiplex.Clases
 {
     internal class Funcion
     {
+        private static int numCodigo=1;
+
+        private string codigo;
+        private DateTime hora;
+        private Sala sala;
+        private Pelicula pelicula;
+        List<Espectador> l_espectadores;
+
+        public Funcion(DateTime hora, Sala sala, Pelicula pelicula)
+        {
+            //Asignar codigo consecutivo a la funcion
+            codigo = $"000{numCodigo}";
+            numCodigo++;
+
+            Hora = hora;
+            Sala = sala;
+            Pelicula = pelicula;
+            l_espectadores = new List<Espectador>();
+        }
+
+        public string Codigo { get => codigo;}
+        public DateTime Hora { get => hora; set => hora = value; }
+        internal Sala Sala { get => sala; set => sala = value; }
+        internal Pelicula Pelicula { get => pelicula; set => pelicula = value; }
+        internal List<Espectador> L_espectadores { get => l_espectadores; set => l_espectadores = value; }
     }
 }
