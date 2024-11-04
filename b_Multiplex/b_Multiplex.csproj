@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Eventos\" />
-    <Folder Include="Interfaces\" />
     <Folder Include="Aspectos\" />
   </ItemGroup>
 
