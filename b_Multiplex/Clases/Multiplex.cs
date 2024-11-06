@@ -20,11 +20,7 @@ namespace b_Multiplex.Clases
             Nombre = nombre;
             Direccion = direccion;
 
-            l_salas = new List<Sala>();
-            for (int i = 0; i < numTotalSalas; i++)
-            {
-                l_salas.Add(new Sala());
-            }
+            l_salas = Enumerable.Range(0, numTotalSalas).Select(_ => new Sala()).ToList();
         }
 
         public string Nombre { get => nombre; 

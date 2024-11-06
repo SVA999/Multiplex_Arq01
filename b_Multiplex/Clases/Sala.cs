@@ -22,8 +22,6 @@ namespace b_Multiplex.Clases
             Multiplex.numeroSala++;
 
             sillas = new string[16,8];
-
-
         }
 
         public byte Numero { get => numero; set => numero = value; }

@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace b_Multiplex.Clases
 {
-    internal class Espectador : IAscenso 
+    internal abstract class Espectador : I_Combo
     {
         private long id;
         private string nombre;
         private byte edad;
-        private int telefono;
+        private long telefono;
 
-        public Espectador(long id, string nombre, byte edad, int telefono)
+        public Espectador(long id, string nombre, byte edad, long telefono)
         {
             Id = id;
             Nombre = nombre;
@@ -23,10 +23,10 @@ namespace b_Multiplex.Clases
         }
 
         public byte Edad { get => edad; 
-            set => edad = value < 0 ? value : throw new Exception("Id invalido"); }
+            set => edad = value < 0 ? value : throw new Exception("Edad invalida"); }
         
         protected long Id { get => id; 
-            set => id = value < 1000000 ? value : throw new Exception("Id invalido");
+            set => id = value < 1000000 && value > 10000000 ? value : throw new Exception("Id invalido");
         }
         protected string Nombre { get => nombre;
             set
@@ -36,15 +36,9 @@ namespace b_Multiplex.Clases
                 else throw new Exception("Nombre nulo o vacio");
             }
         }
-        protected int Telefono { get => telefono; 
-            set => telefono = value < 1000000000 ? value : throw new Exception("Telefono invalido"); 
+        protected long Telefono { get => telefono; 
+            set => telefono = value < 1000000000 && value > 10000000000 ? value : throw new Exception("Telefono invalido"); 
         }
 
-
-        //Metodo Interfaz
-        public void Asender()
-        {
-            //throw new NotImplementedException();
-        }
     }
 }
