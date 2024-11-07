@@ -11,8 +11,9 @@ namespace b_Multiplex.Clases
         private long id;
         private string nombre;
         private long telefono;
+        private const float descuento = 0;
 
-        public Taquillero(long id, string nombre, int telefono)
+        public Taquillero(long id, string nombre, long telefono)
         {
             Id = id;
             Nombre = nombre;

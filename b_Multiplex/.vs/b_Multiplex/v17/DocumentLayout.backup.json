@@ -3,42 +3,6 @@
   "WorkspaceRootPath": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\clases\\funcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:clases\\funcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\clases\\multiplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:clases\\multiplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\clases\\platino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:clases\\platino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\clases\\espectador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:clases\\espectador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\eventos\\publisher_ascenso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:eventos\\publisher_ascenso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\clases\\normal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:clases\\normal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\clases\\oro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:clases\\oro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\clases\\taquillero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:clases\\taquillero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\clases\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:clases\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\clases\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:clases\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -47,8 +11,40 @@
       "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:interfaces\\iascenso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\interfaces\\ireserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:interfaces\\ireserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\clases\\funcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:clases\\funcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\clases\\multiplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:clases\\multiplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\clases\\espectador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:clases\\espectador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\interfaces\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:interfaces\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\clases\\taquillero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:clases\\taquillero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\clases\\platino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:clases\\platino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\clases\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:clases\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\clases\\normal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:clases\\normal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\clases\\oro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97F26A14-C477-4287-A73D-7EA1F9FFEF47}|b_Multiplex.csproj|solutionrelative:clases\\oro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,37 +54,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Publisher_Ascenso.cs",
-              "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Eventos\\Publisher_Ascenso.cs",
-              "RelativeDocumentMoniker": "Eventos\\Publisher_Ascenso.cs",
-              "ToolTip": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Eventos\\Publisher_Ascenso.cs",
-              "RelativeToolTip": "Eventos\\Publisher_Ascenso.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T18:50:56.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IReserva.cs",
-              "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Interfaces\\IReserva.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IReserva.cs",
-              "ToolTip": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Interfaces\\IReserva.cs",
-              "RelativeToolTip": "Interfaces\\IReserva.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Reserva.cs",
+              "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Interfaces\\Reserva.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Reserva.cs",
+              "ToolTip": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Interfaces\\Reserva.cs",
+              "RelativeToolTip": "Interfaces\\Reserva.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T20:15:17.729Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "IAscenso.cs",
               "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Interfaces\\IAscenso.cs",
               "RelativeDocumentMoniker": "Interfaces\\IAscenso.cs",
@@ -101,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "Sala.cs",
               "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Sala.cs",
               "RelativeDocumentMoniker": "Clases\\Sala.cs",
@@ -110,6 +93,19 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T19:42:01.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Taquillero.cs",
+              "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Taquillero.cs",
+              "RelativeDocumentMoniker": "Clases\\Taquillero.cs",
+              "ToolTip": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Taquillero.cs",
+              "RelativeToolTip": "Clases\\Taquillero.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T19:42:28.594Z",
               "EditorCaption": ""
             },
             {
@@ -127,91 +123,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Taquillero.cs",
-              "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Taquillero.cs",
-              "RelativeDocumentMoniker": "Clases\\Taquillero.cs",
-              "ToolTip": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Taquillero.cs",
-              "RelativeToolTip": "Clases\\Taquillero.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA0wCcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T19:42:28.594Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Normal.cs",
-              "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Normal.cs",
-              "RelativeDocumentMoniker": "Clases\\Normal.cs",
-              "ToolTip": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Normal.cs",
-              "RelativeToolTip": "Clases\\Normal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T19:07:01.458Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Espectador.cs",
               "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Espectador.cs",
               "RelativeDocumentMoniker": "Clases\\Espectador.cs",
               "ToolTip": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Espectador.cs",
               "RelativeToolTip": "Clases\\Espectador.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCsAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T19:07:03.266Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
+              "Title": "Normal.cs",
+              "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Normal.cs",
+              "RelativeDocumentMoniker": "Clases\\Normal.cs",
+              "ToolTip": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Normal.cs",
+              "RelativeToolTip": "Clases\\Normal.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T19:07:01.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Oro.cs",
               "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Oro.cs",
               "RelativeDocumentMoniker": "Clases\\Oro.cs",
               "ToolTip": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Oro.cs",
               "RelativeToolTip": "Clases\\Oro.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T19:07:00.336Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Platino.cs",
               "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Platino.cs",
               "RelativeDocumentMoniker": "Clases\\Platino.cs",
               "ToolTip": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Platino.cs",
               "RelativeToolTip": "Clases\\Platino.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T19:05:36.484Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Multiplex.cs",
               "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Multiplex.cs",
               "RelativeDocumentMoniker": "Clases\\Multiplex.cs",
               "ToolTip": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Multiplex.cs",
               "RelativeToolTip": "Clases\\Multiplex.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T18:26:15.022Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Funcion.cs",
               "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Funcion.cs",
               "RelativeDocumentMoniker": "Clases\\Funcion.cs",
               "ToolTip": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Funcion.cs",
               "RelativeToolTip": "Clases\\Funcion.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T17:43:59.109Z",
               "EditorCaption": ""

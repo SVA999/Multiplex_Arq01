@@ -9,9 +9,9 @@ namespace b_Multiplex.Clases
     internal class Normal : Espectador
     {
         private const float descuento = 0;
-        private byte puntos = 0;
 
-        public Normal(long id, string nombre, byte edad, int telefono) : base(id, nombre, edad, telefono)
+
+        public Normal(long id, string nombre, byte edad, long telefono) : base(id, nombre, edad, telefono)
         {
         }
 

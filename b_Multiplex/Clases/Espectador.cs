@@ -9,10 +9,11 @@ namespace b_Multiplex.Clases
 {
     internal abstract class Espectador : I_Combo
     {
-        private long id;
-        private string nombre;
-        private byte edad;
-        private long telefono;
+        protected long id;
+        protected string nombre;
+        protected byte edad;
+        protected long telefono;
+        protected short puntos;
 
         public Espectador(long id, string nombre, byte edad, long telefono)
         {
@@ -20,15 +21,17 @@ namespace b_Multiplex.Clases
             Nombre = nombre;
             Edad = edad;
             Telefono = telefono;
+            puntos=0;
+
         }
 
-        public byte Edad { get => edad; 
+        internal byte Edad { get => edad; 
             set => edad = value < 0 ? value : throw new Exception("Edad invalida"); }
-        
-        protected long Id { get => id; 
+
+        internal long Id { get => id; 
             set => id = value < 1000000 && value > 10000000 ? value : throw new Exception("Id invalido");
         }
-        protected string Nombre { get => nombre;
+        internal string Nombre { get => nombre;
             set
             {
                 if (!string.IsNullOrEmpty(value) || !string.IsNullOrWhiteSpace(value))
@@ -36,9 +39,9 @@ namespace b_Multiplex.Clases
                 else throw new Exception("Nombre nulo o vacio");
             }
         }
-        protected long Telefono { get => telefono; 
+        internal long Telefono { get => telefono; 
             set => telefono = value < 1000000000 && value > 10000000000 ? value : throw new Exception("Telefono invalido"); 
         }
-
+        internal short Puntos { get => puntos; set => puntos = value; }
     }
 }

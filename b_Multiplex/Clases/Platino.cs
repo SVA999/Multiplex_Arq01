@@ -10,8 +10,7 @@ namespace b_Multiplex.Clases
     internal class Platino : Espectador
     {
         private const float descuento =0.10f;
-        private byte puntos = 0;
-        public Platino(long id, string nombre, byte edad, int telefono) : base(id, nombre, edad, telefono)
+        public Platino(long id, string nombre, byte edad, long telefono) : base(id, nombre, edad, telefono)
         {
         }
     }

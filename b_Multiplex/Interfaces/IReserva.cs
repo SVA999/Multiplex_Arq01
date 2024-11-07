@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace b_Multiplex.Interfaces
 {
-    internal interface Reserva
+    internal interface IReserva
     {
         void Reservar();
         void AsignarSilla();
