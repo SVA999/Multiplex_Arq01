@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Bt2trDfHvCQ=",
+  "dgSpecHash": "M2T9eE1hjAY=",
   "success": true,
-  "projectFilePath": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\b_Multiplex.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\acer\\Documents\\Final-Paradigmas-master(1)\\Final-Paradigmas-master\\b_Multiplex\\b_Multiplex.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\acer\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

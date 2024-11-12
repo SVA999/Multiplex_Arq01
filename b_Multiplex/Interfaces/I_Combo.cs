@@ -8,6 +8,6 @@ namespace b_Multiplex.Interfaces
 {
     internal interface I_Combo
     {
-
+        void Combo(byte tipoccombo, int dinero);
     }
 }
