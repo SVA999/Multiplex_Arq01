@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace b_Multiplex.Clases
 {
-    internal class Funcion
+    public class Funcion
     {
         private static int numCodigo=1;
 
@@ -15,6 +15,11 @@ namespace b_Multiplex.Clases
         private Sala sala;
         private Pelicula pelicula;
         List<Espectador> l_espectadores;
+
+        public Funcion()
+        {
+
+        }
 
         public Funcion(DateTime hora, Sala sala, Pelicula pelicula)
         {
@@ -30,8 +35,8 @@ namespace b_Multiplex.Clases
 
         public string Codigo { get => codigo;}
         public DateTime Hora { get => hora; set => hora = value; }
-        internal Sala Sala { get => sala; set => sala = value; }
-        internal Pelicula Pelicula { get => pelicula; set => pelicula = value; }
-        internal List<Espectador> L_espectadores { get => l_espectadores; set => l_espectadores = value; }
+        public Sala Sala { get => sala; set => sala = value; }
+        public Pelicula Pelicula { get => pelicula; set => pelicula = value; }
+        public List<Espectador> L_espectadores { get => l_espectadores; set => l_espectadores = value; }
     }
 }

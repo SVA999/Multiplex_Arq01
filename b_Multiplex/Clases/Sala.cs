@@ -6,25 +6,26 @@ using System.Threading.Tasks;
 
 namespace b_Multiplex.Clases
 {
-    internal class Sala
+    public class Sala
     {
         private const byte cantSillasVip=32;
         private const byte cantSillasGeneral=96;
 
 
-        private byte numero;
-        private string[,] sillas;
-        
+        private byte id;
+        private Silla[,] sillas;
+
 
         public Sala()
         {
-            Numero = Multiplex.numeroSala;
+            Id = Multiplex.numeroSala;
             Multiplex.numeroSala++;
 
-            sillas = new string[16,8];
+            
+            Sillas = new Silla[16,8];
         }
 
-        public byte Numero { get => numero; set => numero = value; }
-        public string[,] Sillas { get => sillas; set => sillas = value; }
+        public byte Id { get => id; set => id = value; }
+        internal Silla[,] Sillas { get => sillas; set => sillas = value; }
     }
 }

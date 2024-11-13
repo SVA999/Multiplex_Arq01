@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace b_Multiplex.Clases
 {
-    internal class Pelicula
+    public class Pelicula
     {
+        public int Id { get; set; }
         private string nombre;
         private TimeSpan duracion;
         private byte edadMinima;
         private string genero;
+
+        public Pelicula()
+        {
+            
+        }
 
         public Pelicula(string nombre, TimeSpan duracion, byte edadMinima, string genero)
         {

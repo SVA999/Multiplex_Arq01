@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace b_Multiplex.Clases
 {
-    internal class Taquillero
+    public class Taquillero
     {
         private long id;
         private string nombre;
@@ -20,10 +20,10 @@ namespace b_Multiplex.Clases
             Telefono = telefono;
         }
 
-        protected long Id { get => id;
+        public long Id { get => id;
             set => id = value < 1000000 && value > 10000000 ? value : throw new Exception("Id invalido");
         }
-        protected string Nombre{ get => nombre;
+        public string Nombre{ get => nombre;
             set
             {
                 if (!string.IsNullOrEmpty(value) || !string.IsNullOrWhiteSpace(value))
@@ -32,7 +32,7 @@ namespace b_Multiplex.Clases
                     throw new Exception("Nombre nulo o vacio");
             }
         }
-        protected long Telefono { get => telefono;
+        public long Telefono { get => telefono;
             set => telefono = value < 1000000000 && value > 10000000000 ? value : throw new Exception("Telefono invalido");
         }
     }

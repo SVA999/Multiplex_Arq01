@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace b_Multiplex.Clases
 {
-    internal class Normal : Espectador
+    public class Normal : Espectador
     {
         private const float descuento = 0;
-
 
         public Normal(long id, string nombre, byte edad, long telefono) : base(id, nombre, edad, telefono)
         {
         }
 
-
+        public static float Descuento => descuento;
     }
 }

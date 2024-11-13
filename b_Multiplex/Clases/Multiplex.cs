@@ -6,17 +6,24 @@ using System.Threading.Tasks;
 
 namespace b_Multiplex.Clases
 {
-    internal class Multiplex
+    public class Multiplex
     {
         public static byte numeroSala = 1; 
         private const byte numTotalSalas = 5;
 
+        public int Id { get; set; }
         private string nombre;
         private string direccion;
         List<Sala> l_salas;
 
+        public Multiplex()
+        {
+            
+        }
+
         public Multiplex(string nombre, string direccion)
         {
+
             Nombre = nombre;
             Direccion = direccion;
 
@@ -39,7 +46,7 @@ namespace b_Multiplex.Clases
                 else throw new Exception("Direccion nula o vacia");
             }
         }
-        internal List<Sala> L_salas { get => l_salas;
+        public List<Sala> L_salas { get => l_salas;
             set
             {
                 if (l_salas.Count() > numTotalSalas)
