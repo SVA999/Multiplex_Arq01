@@ -16,14 +16,12 @@ namespace b_Multiplex.Eventos
         //Declarar un evento
         internal event delegado_ascenso evt_ascenso;
 
-
         //Atributo Publisher Compra
         internal Publisher_Comprar publisher_comprar;
-        //Metodo para manejar el evento
-        internal void EventHandler() { }
 
+		internal void EventHandler() { }
 
-        const byte puntosPlatino = 100;
+		const byte puntosPlatino = 100;
         const byte puntosOro = 150;
 
         public string AscensoPlatino(Espectador cliente)
@@ -37,7 +35,7 @@ namespace b_Multiplex.Eventos
                 {
                     evt_ascenso();
 
-                        //EVENTO COMPRA
+                    //EVENTO COMPRA
                     publisher_comprar = new Publisher_Comprar();
 
                     //Suscribirme al evento
