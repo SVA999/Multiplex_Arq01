@@ -14,8 +14,9 @@ namespace b_Multiplex.Clases
         protected long id;
         protected string nombre;
         protected byte edad;
-        protected long telefono;
-        protected short puntos;
+		protected short puntos;
+		protected long telefono;
+        
 
         //Atributo Publisher
         internal Publisher_Ascenso publisher_ascenso;

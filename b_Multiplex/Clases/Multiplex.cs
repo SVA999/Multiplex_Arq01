@@ -1,12 +1,14 @@
-﻿using System;
+﻿using b_Multiplex.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace b_Multiplex.Clases
 {
-    public class Multiplex
+    public class Multiplex : IArchivos
     {
         //Combos
         public static int precioCombo1 = 25000;
@@ -29,9 +31,9 @@ namespace b_Multiplex.Clases
         private string direccion;
         private List<Sala> l_salas;
         public static List<Espectador> l_espectadores = new List<Espectador>();
+        private string rutaArchivo;
 
-
-        public Multiplex()
+		public Multiplex()
         {
             
         }
@@ -42,6 +44,7 @@ namespace b_Multiplex.Clases
             Direccion = direccion;
 
             l_salas = Enumerable.Range(0, numTotalSalas).Select(_ => new Sala()).ToList();
+            RutaArchivo = "C:\\Users\\acer\\Documents\\Final-Paradigmas-master\\Final-Paradigmas-master\\b_Multiplex";
         }
 
         public string Nombre { get => nombre; 
@@ -68,6 +71,54 @@ namespace b_Multiplex.Clases
                 else l_salas = value;
             }
         }
-        
-    }
+
+		public string RutaArchivo { get => rutaArchivo; set => rutaArchivo = value; }
+
+		public void Leerbd()
+		{
+			
+			try
+			{
+				string? line;
+				StreamReader lectorbd = new StreamReader(rutaArchivo);
+                string[] particion;
+				line = lectorbd.ReadLine();
+				
+				while (line != null)
+				{
+					
+					Console.WriteLine(line);
+
+                    particion = line.Split(";");
+
+                    l_espectadores.Add(new Normal(long.Parse(particion[0]), particion[1], byte.Parse(particion[2]), long.Parse(particion[4])));
+					
+					line = lectorbd.ReadLine();
+				}
+				
+				lectorbd.Close();
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine("Exception: " + e.Message);
+			}
+		}
+
+		public void Escibirbd(Espectador espectador)
+		{
+			try
+			{
+				
+				StreamWriter escritorbd = new StreamWriter(RutaArchivo, true, Encoding.ASCII);
+
+				escritorbd.Write($"{espectador.Id};{espectador.Nombre};{espectador.Edad};{espectador.Puntos};{espectador.Telefono}\n");
+				
+				escritorbd.Close();
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine("Exception: " + e.Message);
+			}
+		}
+	}
 }
