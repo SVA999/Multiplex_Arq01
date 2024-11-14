@@ -3,6 +3,7 @@ using b_Multiplex.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -33,12 +34,9 @@ namespace b_Multiplex.Clases
 
         }
 
-        public byte Edad { get => edad; 
-            set => edad = value > 0 ? value : throw new Exception("Edad invalida"); 
-        }
 
         public long Id { get => id; 
-            set => id = value > 1000000 && value < 10000000 ? value : throw new Exception("Id invalido");
+            set => id = value > 10000000 && value < 100000000 ? value : throw new Exception("Id invalido, debe tener 8 digitos");
         }
 
         public string Nombre { get => nombre;
@@ -49,9 +47,14 @@ namespace b_Multiplex.Clases
                 else throw new Exception("Nombre nulo o vacio");
             }
         }
+        public byte Edad
+        {
+            get => edad;
+            set => edad = value > 0 ? value : throw new Exception("Edad invalida");
+        }
 
         public long Telefono { get => telefono; 
-            set => telefono = value > 1000000000 && value < 10000000000 ? value : throw new Exception("Telefono invalido"); 
+            set => telefono = value > 1000000000 && value < 10000000000 ? value : throw new Exception("Telefono invalido, debe tener 10 digitos"); 
         }
         public short Puntos { get => puntos; set => puntos = value; }
 
