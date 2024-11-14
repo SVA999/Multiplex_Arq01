@@ -9,7 +9,9 @@ namespace b_Multiplex.Interfaces
 {
     internal interface IAscenso
     {
-        void Asender();
+        string AscensoPlatino(Espectador normal);
+
+        string AscensoOro(Espectador platino);
 
     }
 }

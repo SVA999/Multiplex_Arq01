@@ -8,13 +8,28 @@ namespace b_Multiplex.Clases
 {
     public class Multiplex
     {
+        //Combos
+        public static int precioCombo1 = 25000;
+        public static int precioCombo2 = 30000;
+        public static int precioCombo3 = 40000;
+        public static int precioCombo4 = 50000;
+        public static int precioCombo5 = 60000;
+
+        //Salas
         public static byte numeroSala = 1; 
         private const byte numTotalSalas = 5;
+
+        //Sillas
+        public const int valorSillaVip = 15000;
+        public const int valorSillaGeneral = 10000;
+
 
         public int Id { get; set; }
         private string nombre;
         private string direccion;
-        List<Sala> l_salas;
+        private List<Sala> l_salas;
+        public static List<Espectador> l_espectadores = new List<Espectador>();
+
 
         public Multiplex()
         {
@@ -23,7 +38,6 @@ namespace b_Multiplex.Clases
 
         public Multiplex(string nombre, string direccion)
         {
-
             Nombre = nombre;
             Direccion = direccion;
 
@@ -54,5 +68,6 @@ namespace b_Multiplex.Clases
                 else l_salas = value;
             }
         }
+        
     }
 }

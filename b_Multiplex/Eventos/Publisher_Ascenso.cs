@@ -1,4 +1,5 @@
 ﻿using b_Multiplex.Clases;
+using b_Multiplex.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace b_Multiplex.Eventos
 {
-    internal class Publisher_Ascenso
+    internal class Publisher_Ascenso : IAscenso
     {
         //Delegado que representar el evento
         internal delegate void delegado_ascenso();
@@ -15,25 +16,51 @@ namespace b_Multiplex.Eventos
         //Declarar un evento
         internal event delegado_ascenso evt_ascenso;
 
+
+        //Atributo Publisher Compra
+        internal Publisher_Comprar publisher_comprar;
+        //Metodo para manejar el evento
+        internal void EventHandler() { }
+
+
         const byte puntosPlatino = 100;
         const byte puntosOro = 150;
 
-        internal string AscensoPlatino(Normal normal)
+        public string AscensoPlatino(Espectador cliente)
         {
             try
             {
+                string asenso="";
+
                 //Verifica si el evento ha sido llamado / Esto impide que no se pueda llamar directamente
                 if (evt_ascenso != null)
                 {
                     evt_ascenso();
 
-                    if (normal.Puntos >= puntosPlatino)
+                        //EVENTO COMPRA
+                    publisher_comprar = new Publisher_Comprar();
+
+                    //Suscribirme al evento
+                    publisher_comprar.evt_compra += EventHandler;
+
+                    if (cliente is Normal && cliente.Puntos >= puntosPlatino)
                     {
-                        new Platino(normal.Id, normal.Nombre, normal.Edad, normal.Telefono);
-                        normal = null;
-                        return "FELICIDADES!! has sido ascendido a cliente Platino";  
+                            //CAMBIO DE CATEGORIA 
+                        Platino nuevoCliente = new Platino(cliente.Id, cliente.Nombre, cliente.Edad, cliente.Telefono);
+                        nuevoCliente.Puntos = cliente.Puntos;                     
+                        
+                            //ELIMINA LA CLASE ANTERIOR 
+                        Multiplex.l_espectadores.RemoveAll(p => p.Id == cliente.Id);
+                        cliente = null;
+
+                            //INTRODUCE EL CLIENTE CON SU NUEVA CATEGORIA
+                        Multiplex.l_espectadores.Add(nuevoCliente);
+                        asenso = $"FELICIDADES!! has sido ascendido a cliente Platino, {publisher_comprar.Compra(nuevoCliente)}";
+                        return asenso;
                     }
-                    return $"Te faltan {puntosPlatino - normal.Puntos } puntos para llegar a Platino";
+                    return $"{publisher_comprar.Compra(cliente)}, " +
+                        $"Te faltan {puntosPlatino - cliente.Puntos} puntos para llegar a Platino";
+  
                 }
                 else return "Llamada al evento AscensoPlatino no valida";
             }
@@ -43,22 +70,42 @@ namespace b_Multiplex.Eventos
             }
         }
 
-        internal string AscensoOro(Platino platino)
+        public string AscensoOro(Espectador cliente)
         {
             try
             {
+                string asenso = "";
+
                 //Verifica si el evento ha sido llamado / Esto impide que no se pueda llamar directamente
                 if (evt_ascenso != null)
                 {
                     evt_ascenso();
 
-                    if (platino.Puntos >= puntosOro)
+                    //EVENTO COMPRA
+                    publisher_comprar = new Publisher_Comprar();
+
+                    //Suscribirme al evento
+                    publisher_comprar.evt_compra += EventHandler;
+
+                    if (cliente is Platino && cliente.Puntos >= puntosOro)
                     {
-                        new Oro(platino.Id, platino.Nombre, platino.Edad, platino.Telefono);
-                        platino = null;
-                        return "FELICIDADES!! has sido ascendido a cliente Oro";
+
+                        //CAMBIO DE CATEGORIA 
+                        Oro nuevoCliente = new Oro(cliente.Id, cliente.Nombre, cliente.Edad, cliente.Telefono);
+                        nuevoCliente.Puntos = cliente.Puntos;
+
+                        //ELIMINA LA CLASE ANTERIOR 
+                        Multiplex.l_espectadores.RemoveAll(p => p.Id == cliente.Id);
+                        cliente = null;
+
+                        //INTRODUCE EL CLIENTE CON SU NUEVA CATEGORIA
+                        Multiplex.l_espectadores.Add(nuevoCliente);
+                        asenso = $"FELICIDADES!! has sido ascendido a cliente Oro, {publisher_comprar.Compra(nuevoCliente)}";
+                        return asenso;
+
                     }
-                    return $"Te faltan {puntosOro - platino.Puntos} puntos para llegar a Oro";
+                    return $"{publisher_comprar.Compra(cliente)}, " +
+                        $"Te faltan {puntosOro - cliente.Puntos} puntos para llegar a Oro";
                 }
                 else return "Llamada al evento AscensoOro no valida";
             }

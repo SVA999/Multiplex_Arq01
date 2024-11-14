@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace b_Multiplex.Aspectos
 {
-    internal class InterceptorCombo : IInterceptor
+    public class InterceptorCombo : IInterceptor
     {
         void IInterceptor.Intercept(IInvocation invocation)
         {
@@ -19,9 +19,9 @@ namespace b_Multiplex.Aspectos
             invocation.Proceed();
 
             //Validacion - Escribo que el metodo termino su ejecucion
-            Console.WriteLine($"Método: {invocation.Method.Name} Ha terminado\n");
+            Console.WriteLine($"Método: {invocation.Method.Name} Ha terminado, Retornando...\n");
 
         }
     }
 }
-}
+

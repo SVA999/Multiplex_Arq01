@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("b_Multiplex")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2998bc089031d4a3989e0f5b291c8170ecc0c761")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
->>>>>>> 9e69e1555059063a5d1b49096649799cfde8b68a
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fcc5e06ebddb371ae0e743db3c66a62f78bf0dda")]
 [assembly: System.Reflection.AssemblyProductAttribute("b_Multiplex")]
 [assembly: System.Reflection.AssemblyTitleAttribute("b_Multiplex")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

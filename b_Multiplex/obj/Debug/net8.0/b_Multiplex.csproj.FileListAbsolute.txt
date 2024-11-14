@@ -10,3 +10,4 @@ E:\Santiago\Programacion\UPB\Proyectos\Final-Paradigmas\b_Multiplex\obj\Debug\ne
 E:\Santiago\Programacion\UPB\Proyectos\Final-Paradigmas\b_Multiplex\obj\Debug\net8.0\refint\b_Multiplex.dll
 E:\Santiago\Programacion\UPB\Proyectos\Final-Paradigmas\b_Multiplex\obj\Debug\net8.0\b_Multiplex.pdb
 E:\Santiago\Programacion\UPB\Proyectos\Final-Paradigmas\b_Multiplex\obj\Debug\net8.0\ref\b_Multiplex.dll
+E:\Santiago\Programacion\UPB\Proyectos\Final-Paradigmas\b_Multiplex\obj\Debug\net8.0\b_Multiplex.csproj.AssemblyReference.cache
