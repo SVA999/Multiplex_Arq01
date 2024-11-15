@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FormMultiplex")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f1e536c94a523e2339e13a3fd68b96c2bdf83b2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+242a037b06d7e1da39a1477864a4bf28e2df46f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("FormMultiplex")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FormMultiplex")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

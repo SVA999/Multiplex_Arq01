@@ -7,11 +7,14 @@ using System.Threading.Tasks;
 
 namespace b_Multiplex.Interfaces
 {
-	internal interface IArchivos
+	public interface IArchivos
 	{
-		void Leerbd();
-		void Escibirbd(Espectador espectador);
-		
-	}
+		void LeerDBCliente();
+		void EscibirDBCliente(Espectador espectador);
+        void LeerDBTaquilleros();
+        void LeerDBPeliculas();
+        void LeerDBFunciones();
+
+    }
 
 }

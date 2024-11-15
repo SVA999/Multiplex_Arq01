@@ -21,8 +21,8 @@ namespace b_Multiplex.Eventos
 
 		internal void EventHandler() { }
 
-		const byte puntosPlatino = 100;
-        const byte puntosOro = 150;
+		const byte puntosPlatino = Multiplex.puntosPlatino;
+        const byte puntosOro = Multiplex.puntosOro;
 
         public string AscensoPlatino(Espectador cliente)
         {
@@ -53,7 +53,8 @@ namespace b_Multiplex.Eventos
 
                             //INTRODUCE EL CLIENTE CON SU NUEVA CATEGORIA
                         Multiplex.l_espectadores.Add(nuevoCliente);
-                        asenso = $"FELICIDADES!! has sido ascendido a cliente Platino, {publisher_comprar.Compra(nuevoCliente)}";
+                        asenso += $"Puntos por Combo, {publisher_comprar.Compra(nuevoCliente)}\n\n ";
+                        asenso += $"FELICIDADES!! has sido ascendido a cliente Platino, {publisher_comprar.Compra(nuevoCliente)}";
                         return asenso;
                     }
                     return $"{publisher_comprar.Compra(cliente)}, " +
@@ -98,7 +99,8 @@ namespace b_Multiplex.Eventos
 
                         //INTRODUCE EL CLIENTE CON SU NUEVA CATEGORIA
                         Multiplex.l_espectadores.Add(nuevoCliente);
-                        asenso = $"FELICIDADES!! has sido ascendido a cliente Oro, {publisher_comprar.Compra(nuevoCliente)}";
+                        asenso += $"Puntos por Combo, {publisher_comprar.Compra(nuevoCliente)}\n\n ";
+                        asenso += $"FELICIDADES!! has sido ascendido a cliente Oro, {publisher_comprar.Compra(nuevoCliente)}";
                         return asenso;
 
                     }

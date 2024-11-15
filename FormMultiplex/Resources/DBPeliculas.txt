@@ -1,0 +1,8 @@
+1;Deadpool 3;02:07;18;Acción/Comedia
+2;La sustancia;02:20;18;Terror/Ciencia ficción
+3;Moana 2;01:40;0;Infantil/Aventura
+4;Venom: The Last Dance;01:50;12;Acción/Ciencia ficción
+5;Red One;2:03;7;Acción/Comedia
+6;Mi Pobre Angelito;01:43;0;Infantil/Comedia
+7;El Grinch;01:45;0;Infantil/Comedia
+8;Una Navidad muy Prendida;01:33;0;Infantil/Comedia

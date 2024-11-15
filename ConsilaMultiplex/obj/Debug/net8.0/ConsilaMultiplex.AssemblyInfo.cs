@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsilaMultiplex")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fcc5e06ebddb371ae0e743db3c66a62f78bf0dda")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+242a037b06d7e1da39a1477864a4bf28e2df46f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsilaMultiplex")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsilaMultiplex")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

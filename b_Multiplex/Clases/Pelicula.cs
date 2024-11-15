@@ -13,12 +13,6 @@ namespace b_Multiplex.Clases
         private TimeSpan duracion;
         private byte edadMinima;
         private string genero;
-
-        public Pelicula()
-        {
-            
-        }
-
         public Pelicula(string nombre, TimeSpan duracion, byte edadMinima, string genero)
         {
             Nombre = nombre;

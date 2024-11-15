@@ -15,9 +15,9 @@ namespace ConsilaMultiplex
                 Multiplex multiplex = new Multiplex("Cinematronico", "Calle 2 #45V");
 
 
-                Multiplex.l_espectadores.Add(new Normal(1234567, "Juan", 25, 3558556456));
-                Multiplex.l_espectadores.Add(new Normal(1234587, "Ana", 25, 3558556456));
-                Multiplex.l_espectadores.Add(new Normal(1234597, "Pabli", 25, 3558556456));
+                Multiplex.l_espectadores.Add(new Normal(12345678, "Juan", 25, 3558556456));
+                Multiplex.l_espectadores.Add(new Normal(12345878, "Ana", 25, 3558556456));
+                Multiplex.l_espectadores.Add(new Normal(12345978, "Pabli", 25, 3558556456));
 
                 //Prueba de aspectos y eventos//
                 //▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬//
@@ -174,19 +174,44 @@ namespace ConsilaMultiplex
                     Console.WriteLine();
                 }
 
-                salaEncontrada = multiplex.L_salas.FirstOrDefault(p => p.Id == 5);
+                
+
+
+                //Prueba Venta de boletos//
+                //▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬//
+                //▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬//
+                //▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬//
+
+                Taquillero vendedor = new Taquillero("Juan",1324567890);
+
+                multiplex.L_peliculas.Add(new Pelicula("Cargo",new TimeSpan(3,2,0),16,"Documental"));
+
+                Funcion funcion = new Funcion(new DateTime(2024, 11, 15, 5, 30, 0), multiplex.L_salas[0], multiplex.L_peliculas[0]);
+
+                // Encontrar el producto por ID
+                var espectadorEncontrado = Multiplex.l_espectadores.FirstOrDefault(p => p.Nombre == "Juan");
+                
+                Console.WriteLine(vendedor.VenderBoleta(20000, funcion, espectadorEncontrado, true));
+
 
                 Console.WriteLine($"\n--- ESTOS SON LOS ASIENTOS DE LA SALA {salaEncontrada.Id} ---\n");
 
+                // Encontrar el producto por ID
+                espectadorEncontrado = Multiplex.l_espectadores.FirstOrDefault(p => p.Nombre == "Ana");
 
-                for (int i = 0; i < salaEncontrada.Sillas.GetLength(0); i++)
-                {
-                    for (int j = 0; j < salaEncontrada.Sillas.GetLength(1); j++)
-                    {
-                        Console.Write($"{salaEncontrada.Sillas[i, j].Posicion}\t");
-                    }
-                    Console.WriteLine();
-                }
+                Console.WriteLine(vendedor.VenderBoleta(15000, funcion, espectadorEncontrado, true));
+
+                // Encontrar el producto por ID
+                espectadorEncontrado = Multiplex.l_espectadores.FirstOrDefault(p => p.Nombre == "Pabli");
+
+                Console.WriteLine(vendedor.VenderBoleta(15000, funcion, espectadorEncontrado, true));
+
+                // Encontrar el producto por ID
+                espectadorEncontrado = Multiplex.l_espectadores.FirstOrDefault(p => p.Nombre == "Pabli");
+
+                Console.WriteLine(vendedor.VenderBoleta(15000, funcion, espectadorEncontrado,"D5" , false));
+                Console.WriteLine(multiplex.L_salas[0].Sillas[3,4].Ocupada);
+
 
 
             }

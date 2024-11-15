@@ -16,7 +16,6 @@ namespace b_Multiplex.Clases
 
         private byte id;
 
-        
         private Silla[,] m_sillas;
 
 
@@ -30,8 +29,6 @@ namespace b_Multiplex.Clases
         }
 
         public byte Id { get => id; set => id = value; }
-
-        [NotMapped]
         public Silla[,] Sillas { get => m_sillas; set => m_sillas = value; }
 
         public void LimpiarSala()

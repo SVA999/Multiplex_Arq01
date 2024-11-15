@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\FinalMultiplex\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\FinalMultiplex\\Data\\Migrations\\20241113232451_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Data\\Migrations\\20241113232451_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A9E04F42-F97C-430D-8C7B-0458AE2D49C2}|FinalMultiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\finalmultiplex\\data\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9E04F42-F97C-430D-8C7B-0458AE2D49C2}|FinalMultiplex.csproj|solutionrelative:data\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9E04F42-F97C-430D-8C7B-0458AE2D49C2}|FinalMultiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\finalmultiplex\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9E04F42-F97C-430D-8C7B-0458AE2D49C2}|FinalMultiplex.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A9E04F42-F97C-430D-8C7B-0458AE2D49C2}|FinalMultiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\finalmultiplex\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9E04F42-F97C-430D-8C7B-0458AE2D49C2}|FinalMultiplex.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9E04F42-F97C-430D-8C7B-0458AE2D49C2}|FinalMultiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\finalmultiplex\\data\\migrations\\20241113232451_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9E04F42-F97C-430D-8C7B-0458AE2D49C2}|FinalMultiplex.csproj|solutionrelative:data\\migrations\\20241113232451_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9E04F42-F97C-430D-8C7B-0458AE2D49C2}|FinalMultiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\finalmultiplex\\data\\migrations\\00000000000000_createidentityschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9E04F42-F97C-430D-8C7B-0458AE2D49C2}|FinalMultiplex.csproj|solutionrelative:data\\migrations\\00000000000000_createidentityschema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9E04F42-F97C-430D-8C7B-0458AE2D49C2}|FinalMultiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\finalmultiplex\\views\\multiplexes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A9E04F42-F97C-430D-8C7B-0458AE2D49C2}|FinalMultiplex.csproj|solutionrelative:views\\multiplexes\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EDDD3435-8DAF-42EC-B327-15C0FF8B5C35}|..\\b_Multiplex\\b_Multiplex.csproj|e:\\santiago\\programacion\\upb\\proyectos\\final-paradigmas\\b_multiplex\\clases\\sala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -41,24 +57,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 210,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "00000000000000_CreateIdentitySchema.cs",
+              "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\FinalMultiplex\\Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "ToolTip": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\FinalMultiplex\\Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "RelativeToolTip": "Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T23:35:40.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\FinalMultiplex\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\FinalMultiplex\\Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Data\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAM4AAAAAAAAAAAArwEwAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T23:31:29.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\FinalMultiplex\\Views\\Multiplexes\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Multiplexes\\Edit.cshtml",
+              "ToolTip": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\FinalMultiplex\\Views\\Multiplexes\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Multiplexes\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-13T23:31:13.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\FinalMultiplex\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\FinalMultiplex\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T23:30:59.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "20241113232451_InitialCreate.cs",
               "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\FinalMultiplex\\Data\\Migrations\\20241113232451_InitialCreate.cs",
               "RelativeDocumentMoniker": "Data\\Migrations\\20241113232451_InitialCreate.cs",
               "ToolTip": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\FinalMultiplex\\Data\\Migrations\\20241113232451_InitialCreate.cs",
               "RelativeToolTip": "Data\\Migrations\\20241113232451_InitialCreate.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAgwE8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwE8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T23:24:52.218Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\FinalMultiplex\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
@@ -71,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "PeliculasController.cs",
               "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\FinalMultiplex\\Controllers\\PeliculasController.cs",
               "RelativeDocumentMoniker": "Controllers\\PeliculasController.cs",
@@ -84,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "MultiplexesController.cs",
               "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\FinalMultiplex\\Controllers\\MultiplexesController.cs",
               "RelativeDocumentMoniker": "Controllers\\MultiplexesController.cs",
@@ -97,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Sala.cs",
               "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Sala.cs",
               "RelativeDocumentMoniker": "..\\b_Multiplex\\Clases\\Sala.cs",
@@ -110,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Silla.cs",
               "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Silla.cs",
               "RelativeDocumentMoniker": "..\\b_Multiplex\\Clases\\Silla.cs",
@@ -123,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Platino.cs",
               "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Platino.cs",
               "RelativeDocumentMoniker": "..\\b_Multiplex\\Clases\\Platino.cs",
@@ -135,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Oro.cs",
               "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Oro.cs",
               "RelativeDocumentMoniker": "..\\b_Multiplex\\Clases\\Oro.cs",
@@ -147,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Normal.cs",
               "DocumentMoniker": "E:\\Santiago\\Programacion\\UPB\\Proyectos\\Final-Paradigmas\\b_Multiplex\\Clases\\Normal.cs",
               "RelativeDocumentMoniker": "..\\b_Multiplex\\Clases\\Normal.cs",

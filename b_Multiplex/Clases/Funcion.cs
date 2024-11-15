@@ -16,11 +16,6 @@ namespace b_Multiplex.Clases
         private Pelicula pelicula;
         List<Espectador> l_espectadores;
 
-        public Funcion()
-        {
-
-        }
-
         public Funcion(DateTime hora, Sala sala, Pelicula pelicula)
         {
             //Asignar codigo consecutivo a la funcion
@@ -36,7 +31,13 @@ namespace b_Multiplex.Clases
         public string Codigo { get => codigo;}
         public DateTime Hora { get => hora; set => hora = value; }
         public Sala Sala { get => sala; set => sala = value; }
+        public int SalaId => Sala.Id;
+
         public Pelicula Pelicula { get => pelicula; set => pelicula = value; }
+        public string PeliculaNombre => Pelicula.Nombre;
+
         public List<Espectador> L_espectadores { get => l_espectadores; set => l_espectadores = value; }
+
+
     }
 }

@@ -8,12 +8,11 @@ namespace b_Multiplex.Clases
 {
     public class Normal : Espectador
     {
-        private const float descuento = 1;
 
         public Normal(long id, string nombre, byte edad, long telefono) : base(id, nombre, edad, telefono)
         {
+            Descuento = descuentoNormal;
         }
 
-        public static float Descuento => descuento;
     }
 }

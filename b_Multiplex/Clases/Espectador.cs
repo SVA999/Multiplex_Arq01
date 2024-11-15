@@ -16,7 +16,11 @@ namespace b_Multiplex.Clases
         protected byte edad;
 		protected short puntos;
 		protected long telefono;
-        
+        private float descuento;
+        public const float descuentoNormal = 1;
+        public const float descuentoPlatino = 0.9f;
+        public const float descuentoOro = 0.80f;
+
 
         //Atributo Publisher
         internal Publisher_Ascenso publisher_ascenso;
@@ -32,7 +36,6 @@ namespace b_Multiplex.Clases
             Edad = edad;
             Telefono = telefono;
             puntos=0;
-
         }
 
 
@@ -58,6 +61,18 @@ namespace b_Multiplex.Clases
             set => telefono = value > 1000000000 && value < 10000000000 ? value : throw new Exception("Telefono invalido, debe tener 10 digitos"); 
         }
         public short Puntos { get => puntos; set => puntos = value; }
+        public string Categoria { get {
+                if (this is Normal)
+                    return "Normal";
+                else if (this is Oro)
+                    return "Oro";
+                else if (this is Platino)
+                    return "Platino";
+                else return "Sin categoria";
+            } 
+        }
+
+        public  float Descuento { get => descuento; set => descuento = value; }
 
         public string ComprarCombo(byte tipocombo)
         {
@@ -79,11 +94,11 @@ namespace b_Multiplex.Clases
 
 
                     if (this is Normal)
-                        descuento = Normal.Descuento;
+                        descuento = descuentoNormal;
                     else if (this is Oro)
-                        descuento = Platino.Descuento;
+                        descuento = descuentoPlatino;
                     else if (this is Platino)
-                        descuento = Oro.Descuento;
+                        descuento = descuentoOro;
 
                     switch (tipocombo)
                     {

@@ -69,8 +69,7 @@
               "RelativeToolTip": "Data\\Migrations\\00000000000000_CreateIdentitySchema.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T23:35:40.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T23:35:40.346Z"
             },
             {
               "$type": "Document",
@@ -95,8 +94,7 @@
               "RelativeToolTip": "Views\\Multiplexes\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-13T23:31:13.732Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T23:31:13.732Z"
             },
             {
               "$type": "Document",
@@ -108,8 +106,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T23:30:59.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T23:30:59.769Z"
             },
             {
               "$type": "Document",
@@ -121,8 +118,7 @@
               "RelativeToolTip": "Data\\Migrations\\20241113232451_InitialCreate.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwE8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T23:24:52.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T23:24:52.218Z"
             },
             {
               "$type": "Document",
@@ -134,8 +130,7 @@
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T23:21:23.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T23:21:23.548Z"
             },
             {
               "$type": "Document",
@@ -147,8 +142,7 @@
               "RelativeToolTip": "Controllers\\PeliculasController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T23:19:49.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T23:19:49.17Z"
             },
             {
               "$type": "Document",
@@ -160,8 +154,7 @@
               "RelativeToolTip": "Controllers\\MultiplexesController.cs",
               "ViewState": "AgIAAIsAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T23:19:30.826Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T23:19:30.826Z"
             },
             {
               "$type": "Document",
@@ -173,8 +166,7 @@
               "RelativeToolTip": "..\\b_Multiplex\\Clases\\Sala.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwBIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T23:17:42.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T23:17:42.588Z"
             },
             {
               "$type": "Document",
@@ -186,8 +178,7 @@
               "RelativeToolTip": "..\\b_Multiplex\\Clases\\Silla.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T23:17:35.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T23:17:35.072Z"
             },
             {
               "$type": "Document",
@@ -223,8 +214,7 @@
               "RelativeToolTip": "..\\b_Multiplex\\Clases\\Normal.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T16:35:34.441Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T16:35:34.441Z"
             }
           ]
         }
