@@ -5,3 +5,32 @@
 /b_Multiplex/.vs/b_Multiplex/copilot-chat/09c09eb5/sessions/c60c893a-0bc3-4263-93e6-e617a7acadf3
 /b_Multiplex/.vs/b_Multiplex/CopilotIndices/18.3.502.33069/CodeChunks.db
 /b_Multiplex/.vs/b_Multiplex/DesignTimeBuild/.dtbcache.v2
+
+#Visual Studio
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.userprefs
+
+#.NET Core / .NET 5+
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.pdb
+*.orig
+
+#Publish output
+publish/
+
+#VS Code
+.vscode/
+.history/
+
+#Archivos de sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
