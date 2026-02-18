@@ -9,18 +9,14 @@ using System.Threading.Tasks;
 
 namespace b_Multiplex.Clases
 {
-    public abstract class Espectador : ICombo
+    public abstract class Espectador 
     {
-        protected long id;
-        protected string nombre;
-        protected byte edad;
-		protected short puntos;
-		protected long telefono;
-        private float descuento;
-        public const float descuentoNormal = 1;
-        public const float descuentoPlatino = 0.9f;
-        public const float descuentoOro = 0.80f;
-
+        private long id;
+        private string nombre;
+        private byte edad;
+		private int telefono;
+        private string correo;
+        private ISuscripcion suscripcion;
 
         //Atributo Publisher
         internal Publisher_Ascenso publisher_ascenso;
@@ -29,12 +25,13 @@ namespace b_Multiplex.Clases
         //Metodo para manejar el evento
         internal void EventHandler() { }
 
-        public Espectador(long id, string nombre, byte edad, long telefono)
+        public Espectador(long id, string nombre, byte edad, long telefono, ISuscripcion suscripcion)
         {
             Id = id;
             Nombre = nombre;
             Edad = edad;
             Telefono = telefono;
+            ISuscripcion = suscripcion;
             puntos=0;
         }
 
