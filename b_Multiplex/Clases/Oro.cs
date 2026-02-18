@@ -38,7 +38,7 @@ namespace b_Multiplex.Clases
 
         public double obtener_descuento()
         {
-
+            
         }
 
     }

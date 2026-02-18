@@ -1,4 +1,5 @@
-﻿using b_Multiplex.Interfaces;
+﻿using b_Multiplex.Clases.Cine;
+using b_Multiplex.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

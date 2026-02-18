@@ -9,47 +9,50 @@ using System.Threading.Tasks;
 
 
 namespace b_Multiplex.Clases
-
-
-
-public class Cadena : IServicio
 {
 
-    private string nombre;
-    private Multiplex l_multiplex;
-    private IServicios l_servicios;
-
-
-
-
-    // =========================
-    // Constructor con inyección de dependencias
-    // =========================
-    public Cadena(string nombre, Multiplex multiplex, IServicios servicios)
+    public class Cadena : IServicio
     {
 
-        this.nombre = nombre;
-        this.l_multiplex = multiplex;
-        this.l_servicios = servicios;
+        private string nombre;
+        private Multiplex l_multiplex;
+        private IServicio l_servicios;
 
-    }
 
-    public string Nombre
-    {
-        get => nombre;
-        set => nombre = value;
-    }
+        // =========================
+        // Constructor con inyección de dependencias
+        // =========================
+        public Cadena(string nombre, Multiplex multiplex, IServicio servicios)
+        {
 
-    public Multiplex Multiplex
-    {
-        get => l_multiplex;
-        set => l_multiplex = value ?? throw new ArgumentNullException(nameof(value));
-    }
+            Nombre = nombre;
+            L_Multiplex = multiplex;
+            L_Servicios = servicios;
 
-    public IServicios Servicios
-    {
-        get => l_servicios;
-        set => l_servicios = value ?? throw new ArgumentNullException(nameof(value));
+        }
+
+        public string Nombre
+        {
+            get => nombre;
+            set => nombre = value;
+        }
+
+        public Multiplex L_Multiplex
+        {
+            get => l_multiplex;
+            set => l_multiplex = value ?? throw new ArgumentNullException(nameof(value));
+        }
+
+        public IServicio L_Servicios
+        {
+            get => l_servicios;
+            set => l_servicios = value ?? throw new ArgumentNullException(nameof(value));
+        }
+
+        public string ObtenerServicio()
+        {
+            return  GetType().Name;
+        }
     }
 }
 

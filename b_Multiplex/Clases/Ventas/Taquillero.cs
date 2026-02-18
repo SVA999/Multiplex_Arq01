@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using b_Multiplex.Clases.Cine;
 using b_Multiplex.Eventos;
 
 namespace b_Multiplex.Clases.Ventas

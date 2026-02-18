@@ -1,10 +1,10 @@
-﻿    using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace b_Multiplex.Clases
+namespace b_Multiplex.Clases.Cine
 {
     public class Funcion
     {

@@ -4,32 +4,31 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using b_Multiplex.Interfaces;
 
-namespace b_Multiplex.Clases
+namespace b_Multiplex.Clases.Cine
 {
     public class Sala
     {
-        private const byte cantSillasVip=24;
-        private const byte cantSillasGeneral=72;
-
-        private char[] letras = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H' };
-
         private byte id;
 
-        private Silla[,] m_sillas;
+        private char[] letras = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H' };
+        
+        private ISilla[,] m_sillas;
+        private ITipoSala tipoSala;
 
 
-        public Sala()
+        public Sala(byte filas, byte columnas)
         {
             Id = Multiplex.numeroSala;
             Multiplex.numeroSala++;
 
-            Sillas = new Silla[8, 12];
+            Sillas = new ISilla[filas, columnas];
             LimpiarSala();
         }
 
         public byte Id { get => id; set => id = value; }
-        public Silla[,] Sillas { get => m_sillas; set => m_sillas = value; }
+        public ISilla[,] Sillas { get => m_sillas; set => m_sillas = value; }
 
         public void LimpiarSala()
         {

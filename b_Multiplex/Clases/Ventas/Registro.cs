@@ -1,5 +1,5 @@
 ﻿using b_Multiplex.Interfaces;
-using b_Multiplex.Clases.Ventas
+using b_Multiplex.Clases.Ventas;
 using System;
 using System.Collections.Generic;
 using System.Linq;

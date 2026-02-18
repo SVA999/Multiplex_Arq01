@@ -33,7 +33,7 @@ namespace b_Multiplex.Clases
 
         public double calcular_descuento()
         {
-
+            
         }
 
         public double obtener_descuento()
