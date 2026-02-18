@@ -21,3 +21,12 @@ E:\Santiago\Programacion\UPB\Proyectos\Final-Paradigmas\ConsilaMultiplex\obj\Deb
 E:\Santiago\Programacion\UPB\Proyectos\Final-Paradigmas\ConsilaMultiplex\obj\Debug\net8.0\ConsilaMultiplex.pdb
 E:\Santiago\Programacion\UPB\Proyectos\Final-Paradigmas\ConsilaMultiplex\obj\Debug\net8.0\ConsilaMultiplex.genruntimeconfig.cache
 E:\Santiago\Programacion\UPB\Proyectos\Final-Paradigmas\ConsilaMultiplex\obj\Debug\net8.0\ref\ConsilaMultiplex.dll
+G:\Santiago\Programacion\UPB\Proyectos\Final-Paradigmas\ConsilaMultiplex\obj\Debug\net8.0\ConsilaMultiplex.csproj.AssemblyReference.cache
+G:\Santiago\Programacion\UPB\Proyectos\Final-Paradigmas\ConsilaMultiplex\obj\Debug\net8.0\ConsilaMultiplex.GeneratedMSBuildEditorConfig.editorconfig
+G:\Santiago\Programacion\UPB\Proyectos\Final-Paradigmas\ConsilaMultiplex\obj\Debug\net8.0\ConsilaMultiplex.AssemblyInfoInputs.cache
+G:\Santiago\Programacion\UPB\Proyectos\Final-Paradigmas\ConsilaMultiplex\obj\Debug\net8.0\ConsilaMultiplex.AssemblyInfo.cs
+G:\Santiago\Programacion\UPB\Proyectos\Final-Paradigmas\ConsilaMultiplex\obj\Debug\net8.0\ConsilaMultiplex.csproj.CoreCompileInputs.cache
+G:\Santiago\Programacion\UPB\Proyectos\Final-Paradigmas\ConsilaMultiplex\obj\Debug\net8.0\ConsilaMultiplex.sourcelink.json
+G:\Santiago\Programacion\UPB\Proyectos\Final-Paradigmas\ConsilaMultiplex\obj\Debug\net8.0\ConsilaMultiplex.dll
+G:\Santiago\Programacion\UPB\Proyectos\Final-Paradigmas\ConsilaMultiplex\obj\Debug\net8.0\refint\ConsilaMultiplex.dll
+G:\Santiago\Programacion\UPB\Proyectos\Final-Paradigmas\ConsilaMultiplex\obj\Debug\net8.0\ConsilaMultiplex.pdb
