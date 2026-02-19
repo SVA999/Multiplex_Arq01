@@ -1,4 +1,5 @@
-﻿using b_Multiplex.Clases.Ventas;
+﻿using b_Multiplex.Clases;
+using b_Multiplex.Clases.Ventas;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +10,8 @@ namespace b_Multiplex.Interfaces
 {
     internal interface IVentaCombo
     {
-        Combo Vender(int dinero);
-        Combo Vender(int dinero, double descuento);
+        Combo Vender(Espectador cliente, byte numero_combo);
+        Combo Vender(Espectador cliente, byte numero_combo, double descuento);
 
     }
 }

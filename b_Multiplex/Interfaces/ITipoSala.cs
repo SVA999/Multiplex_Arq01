@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace b_Multiplex.Interfaces
 {
-    internal interface ITipoSala
+    public interface ITipoSala
     {
         public string ObtenerTipoSala();
 

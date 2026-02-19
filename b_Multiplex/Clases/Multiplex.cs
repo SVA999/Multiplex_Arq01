@@ -5,11 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using b_Multiplex.Clases;
 using b_Multiplex.Clases.Cine;
+using b_Multiplex.Clases.Ventas;
 
 namespace b_Multiplex.Clases
 {
-    public class Multiplex : IArchivos
+    public class Multiplex 
     {
         //Combos
         public const int precioCombo1 = 25000;
@@ -21,6 +23,8 @@ namespace b_Multiplex.Clases
         //Salas
         public static byte numeroSala = 1; 
         private const byte numTotalSalas = 4;
+        private const byte filasSalas = 16;
+        private const byte columnasSalas = 10;
 
         //Sillas
         public const int valorSillaVip = 15000;
@@ -40,11 +44,12 @@ namespace b_Multiplex.Clases
         private string direccion;
         
         public static List<Espectador> l_espectadores = new List<Espectador>();
-        private List<Taquillero> l_taquilleros;
         private List<Funcion> l_funciones;
         private List<Sala> l_salas = new List<Sala>();
         private List<Pelicula> l_peliculas;
         private List<Pelicula> l_peliculasActivas;
+        private Cartelera cartelera;
+        private Registro registro;
         private string rutaArchivoClientes;
         private string rutaArchivoTaquilleros;
         private string rutaArchivoFunciones;
@@ -56,8 +61,7 @@ namespace b_Multiplex.Clases
             Direccion = direccion;
 
             l_salas = new List<Sala>();
-            L_salas = Enumerable.Range(0, numTotalSalas).Select(_ => new Sala()).ToList();
-            l_taquilleros = new List<Taquillero>();
+            L_salas = Enumerable.Range(0, numTotalSalas).Select(_ => new Sala(filasSalas,columnasSalas)).ToList();
             L_funciones = new List<Funcion>();
             L_peliculas = new List<Pelicula>();
             L_peliculasActivas = new List<Pelicula>();
@@ -94,15 +98,6 @@ namespace b_Multiplex.Clases
             }
         }
 
-        public List<Taquillero> L_taquilleros { get => l_taquilleros; 
-            set
-            {
-                if (l_taquilleros.Count() > totalTaquilleros)
-                    throw new Exception("Numero maximo de taquilleros ");
-                else l_taquilleros = value;
-            }
-        }
-
         public List<Funcion> L_funciones { get => l_funciones; set => l_funciones = value; }
         public List<Pelicula> L_peliculas { get => l_peliculas; set => l_peliculas = value; }
         public List<Pelicula> L_peliculasActivas { get => l_peliculasActivas; set => l_peliculasActivas = value; }
@@ -112,63 +107,64 @@ namespace b_Multiplex.Clases
         public string RutaArchivoFunciones { get => rutaArchivoFunciones; set => rutaArchivoFunciones = value; }
         public string RutaArchivoPeliculas { get => rutaArchivoPeliculas; set => rutaArchivoPeliculas = value; }
         public string RutaArchivoTaquilleros { get => rutaArchivoTaquilleros; set => rutaArchivoTaquilleros = value; }
-        
+        public Cartelera Cartelera { get => cartelera; set => cartelera = value; }
+
 
 
         //Cliente
+        /*
         public void LeerDBCliente()
-		{
-			try
-			{
-				string? line;
-				StreamReader lectorbd = new StreamReader(RutaArchivoClientes, Encoding.UTF8);
+        {
+            try
+            {
+                string? line;
+                StreamReader lectorbd = new StreamReader(RutaArchivoClientes, Encoding.UTF8);
                 string[] particion;
-				line = lectorbd.ReadLine();
-				
-				while (line != null)
-				{
+                line = lectorbd.ReadLine();
+
+                while (line != null)
+                {
                     if (line != "")
                     {
                         particion = line.Split(";");
+                        short puntos = short.Parse(particion[4]);
 
-                        if (short.Parse(particion[4]) < puntosPlatino)
-                        {
-                            Normal espectador = new Normal(long.Parse(particion[0]), particion[1], byte.Parse(particion[2]), long.Parse(particion[3]));
-                            espectador.Puntos = short.Parse(particion[4]);
-                            l_espectadores.Add(espectador);
-                        }
-                        else if (short.Parse(particion[4]) >= puntosPlatino && short.Parse(particion[4]) < puntosOro)
-                        {
-                            Platino espectador = new Platino(long.Parse(particion[0]), particion[1], byte.Parse(particion[2]), long.Parse(particion[3]));
-                            espectador.Puntos = short.Parse(particion[4]);
-                            l_espectadores.Add(espectador);
-                        }
-                        else if (short.Parse(particion[4]) >= puntosOro)
-                        {
-                            Oro espectador = new Oro(long.Parse(particion[0]), particion[1], byte.Parse(particion[2]), long.Parse(particion[3]));
-                            espectador.Puntos = short.Parse(particion[4]);
-                            l_espectadores.Add(espectador);
-                        }
+                        // CAMBIO: ISuscripcion es inyectada según puntos
+                        ISuscripcion suscripcion;
+                        if (puntos < puntosPlatino)
+                            suscripcion = new Normal();
+                        else if (puntos < puntosOro)
+                            suscripcion = new Platino();
+                        else
+                            suscripcion = new Oro();
+
+                        // CAMBIO: Espectador es ahora clase concreta
+                        Espectador espectador = new Espectador(
+                            long.Parse(particion[0]),
+                            particion[1],
+                            byte.Parse(particion[2]),
+                            long.Parse(particion[3]),
+                            suscripcion
+                        );
+                        l_espectadores.Add(espectador);
                     }
-
                     line = lectorbd.ReadLine();
-				}
-				
-				lectorbd.Close();
-			}
-			catch (Exception e)
-			{
-				throw new Exception("Error: " + e.Message);
-			}
-		}
+                }
+                lectorbd.Close();
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Error: " + e.Message);
+            }
+        }
 
-		public void EscibirDBCliente(Espectador espectador)
+        public void EscibirDBCliente(Espectador espectador)
 		{
 			try
 			{
 				StreamWriter escritorbd = new StreamWriter(RutaArchivoClientes, true, Encoding.UTF8);
 
-				escritorbd.Write($"{espectador.Id};{espectador.Nombre};{espectador.Edad};{espectador.Telefono};{espectador.Puntos}\n");
+				escritorbd.Write($"{espectador.Id};{espectador.Nombre};{espectador.Edad};{espectador.Telefono}\n");
 				
 				escritorbd.Close();
 			}
@@ -193,18 +189,20 @@ namespace b_Multiplex.Clases
                     {
                         particion = line.Split(";");
 
-                        string sduracion = particion[2];
                         TimeSpan duracion = TimeSpan.Parse(particion[2]);
+                        bool estado = bool.Parse(particion[3]);
 
+                        // FIX: Pelicula requiere IClasificacionPelicula y IGenero
+                        // Ajusta los constructores de Clasificacion/Genero cuando los veas
+                        IClasificacionPelicula clasificacion = new Clasificacion(particion[4]);
+                        IGenero genero = new Genero(particion[5]);
 
-                        Pelicula pelicula = new Pelicula(particion[1], duracion, byte.Parse(particion[3]), particion[4]);
+                        Pelicula pelicula = new Pelicula(particion[1], duracion, clasificacion, estado, genero);
                         pelicula.Id = short.Parse(particion[0]);
                         L_peliculas.Add(pelicula);
                     }
-
                     line = lectorbd.ReadLine();
                 }
-
                 lectorbd.Close();
             }
             catch (Exception e)
@@ -212,6 +210,7 @@ namespace b_Multiplex.Clases
                 throw new Exception("Error: " + e.Message);
             }
         }
+
 
         public void LeerDBTaquilleros()
         {
@@ -276,7 +275,7 @@ namespace b_Multiplex.Clases
                 throw new Exception("Error: " + e.Message);
             }
         }
-
+        */
 
 
 

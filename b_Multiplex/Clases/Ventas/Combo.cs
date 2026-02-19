@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace b_Multiplex.Clases.Ventas
 {
-    internal class Combo
+    public class Combo
     {
         private string descricion;
         private int valor;

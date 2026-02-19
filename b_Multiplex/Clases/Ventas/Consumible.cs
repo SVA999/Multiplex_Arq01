@@ -14,11 +14,18 @@ namespace b_Multiplex.Clases.Ventas
 
         public Consumible(byte id, ITipoConsumible tipoConsumible)
         {
-            this.id = id;
-            this.tipoConsumible = tipoConsumible;
+            Id = id;
+            TipoConsumible = tipoConsumible;
         }
 
         public byte Id { get => id; set => id = value; }
         public ITipoConsumible TipoConsumible { get => tipoConsumible; set => tipoConsumible = value; }
+
+        public int ObtenerValor()
+        {
+            return tipoConsumible.Valor;
+        }
+
+
     }
 }

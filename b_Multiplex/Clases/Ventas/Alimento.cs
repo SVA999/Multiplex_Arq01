@@ -32,6 +32,8 @@ namespace b_Multiplex.Clases.Ventas
         public string Descripcion { get => descripcion; set => descripcion = value; }
         public int Precio { get => precio; set => precio = value; }
 
+        public int Valor { get => precio; }
+
         public virtual string ObtenerTipoConsumible()
         {
             return GetType().Name;

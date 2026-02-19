@@ -24,6 +24,8 @@ namespace b_Multiplex.Clases.Ventas
         public int Precio { get => precio; set => precio = value; }
         public string Coleccion { get => coleccion; set => coleccion = value; }
 
+        public int Valor { get => precio; }
+
         public virtual string ObtenerTipoConsumible()
         {
             return GetType().Name;

@@ -19,15 +19,15 @@ namespace b_Multiplex.Clases
         public Privado(string descripcion)
         {
 
-            this.descripcion = descripcion;
+            Descripcion = descripcion;
         }
 
-        public string descripcion { get => descripcion; set => descripcion = value; }
+        public string Descripcion { get => this.descripcion; set => this.descripcion = value; }
 
         // =========================
         // Implementación de ITipoEvento
         // =========================
-        public string obtener_tipo()
+        public string ObtenerTipo()
         {
             return $"Evento Privado: {descripcion}";
         }

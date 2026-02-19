@@ -9,5 +9,6 @@ namespace b_Multiplex.Interfaces
     public interface ITipoConsumible
     {
         string ObtenerTipoConsumible();
+        int Valor { get; }
     }
 }

@@ -9,6 +9,6 @@ namespace b_Multiplex.Interfaces
 {
 	public interface ITipoEvento
 	{
-		string obtener_tipo();
+		string ObtenerTipo();
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using b_Multiplex.Clases.Cine;
 using b_Multiplex.Eventos;
+using b_Multiplex.Interfaces;
 
 namespace b_Multiplex.Clases.Ventas
 {
@@ -57,7 +58,7 @@ namespace b_Multiplex.Clases.Ventas
 
                 int precio = vip ? Multiplex.valorSillaVip : Multiplex.valorSillaGeneral;
 
-                var sillaDisponible = funcion.Sala.Sillas.OfType<Silla>().Where(s => (vip && s is Vip || !vip && s is General) && !s.Ocupada)
+                var sillaDisponible = funcion.Sala.Sillas.OfType<ISilla>().Where(s => (vip && s is Vip || !vip && s is General) && !s.Ocupada)
                                                      .FirstOrDefault();
 
                 if (sillaDisponible != null)

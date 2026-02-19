@@ -7,20 +7,27 @@ using b_Multiplex.Interfaces;
 
 namespace b_Multiplex.Clases
 {
-    public abstract class Normal : ISuscripcion, IBeneficios
+    public class Normal : ISuscripcion
     {
 
-        private IBeneficios l_beneficios;
+        private List<IBeneficios> l_beneficios;
+
+        public Normal()
+        {
+            l_beneficios = new List<IBeneficios>();
+        }
+
+        public List<IBeneficios> L_beneficios { get => l_beneficios; set => l_beneficios = value; }
 
 
 
-        public bool puede_ascender(Espectador espectador)
+        public bool puede_ascender()
         {
             return true;
         }
 
 
-        public bool puede_descender(Espectador espectador)
+        public bool puede_descender()
         {
             return false;
         }
@@ -31,16 +38,17 @@ namespace b_Multiplex.Clases
             return "Estimado usuario, se ha suscrito a la membresía Normal. Disfrute de nuestros servicios.";
         }
 
-        public double calcular_descuento()
-        {
-            
-        }
-
         public double obtener_descuento()
         {
-
+            if (l_beneficios.Count > 0)
+            {
+                double total = 0;
+                foreach (var b in l_beneficios)
+                    total += b.obtener_beneficio();
+                return total;
+            }
+            return 0.0;
         }
-
 
     }
 }

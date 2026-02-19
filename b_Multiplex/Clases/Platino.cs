@@ -8,20 +8,27 @@ using b_Multiplex.Interfaces;
 
 namespace b_Multiplex.Clases
 {
-    public class Platino : ISuscripcion, IBeneficios
+    public class Platino : ISuscripcion
     {
 
-        private IBeneficios l_beneficios;
+        private List<IBeneficios> l_beneficios;
+
+        public Platino()
+        {
+            l_beneficios = new List<IBeneficios>();
+        }
+
+        public List<IBeneficios> L_beneficios { get => l_beneficios; set => l_beneficios = value; }
 
 
 
-        public bool puede_ascender(Espectador espectador)
+        public bool puede_ascender()
         {
             return true;
         }
 
 
-        public bool puede_descender(Espectador espectador)
+        public bool puede_descender()
         {
             return true;
         }
@@ -32,15 +39,19 @@ namespace b_Multiplex.Clases
             return "Estimado usuario, se ha suscrito a la membresía Platino. Disfrute de nuestros servicios y beneficios exclusivos para este plan.";
         }
 
-        public double calcular_descuento()
-        {
-            
-        }
-
+        // 5% base; extensible mediante IBeneficios en la lista
         public double obtener_descuento()
         {
-
+            if (l_beneficios.Count > 0)
+            {
+                double total = 0;
+                foreach (var b in l_beneficios)
+                    total += b.obtener_beneficio();
+                return total;
+            }
+            return 0.05;
         }
+
 
     }
 }

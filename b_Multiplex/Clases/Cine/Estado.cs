@@ -16,15 +16,23 @@ namespace b_Multiplex.Clases.Cine
         public Estado(string descripcion, bool selecionable)
         {
             Descripcion = descripcion;
-            Selecionable = selecionable;
+            Ocupado = selecionable;
+        }
+
+        public Estado()
+        {
+            Descripcion= "Disponible";
+            Ocupado = true;
+
         }
 
         public string Descripcion { get => descripcion; set => descripcion = value; }
-        public bool Selecionable { get => selecionable; set => selecionable = value; }
+        public bool Ocupado { get => selecionable; set => selecionable = value; }
+       
 
         public bool PuedeSeleccionarse()
         {
-            return Selecionable;
+            return Ocupado;
         }
     }
 }

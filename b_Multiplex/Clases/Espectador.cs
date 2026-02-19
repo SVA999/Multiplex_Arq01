@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace b_Multiplex.Clases
 {
-    public abstract class Espectador 
+    public class Espectador 
     {
         private long id;
         private string nombre;
@@ -31,7 +31,7 @@ namespace b_Multiplex.Clases
             Nombre = nombre;
             Edad = edad;
             Telefono = telefono;
-            ISuscripcion = suscripcion;
+            Suscripcion = suscripcion;
         }
 
 
@@ -57,100 +57,43 @@ namespace b_Multiplex.Clases
             set => telefono = value > 1000000000 && value < 10000000000 ? value : throw new Exception("Telefono invalido, debe tener 10 digitos"); 
         }
 
-        public string Categoria { get {
-                if (this is Normal)
-                    return "Normal";
-                else if (this is Oro)
-                    return "Oro";
-                else if (this is Platino)
-                    return "Platino";
-                else return "Sin categoria";
-            } 
+        public string Categoria
+        {
+            get
+            {
+                if (suscripcion is Normal) return "Normal";
+                if (suscripcion is Platino) return "Platino";
+                if (suscripcion is Oro) return "Oro";
+                return "Sin categoría";
+            }
         }
 
-        public  float Descuento { get => descuento; set => descuento = value; }
 
-        public string ComprarCombo(byte tipocombo)
+        public ISuscripcion Suscripcion
         {
-            try
-            {
-                if (tipocombo >= 1 || tipocombo <= 5)
-                {
-                    int precio;
-                    //int devuelta;
-                    float descuento = 1;
+            get => suscripcion;
+            set => suscripcion = value ?? throw new ArgumentNullException(nameof(value));
+        }
 
-                    //Instanciar el evento
-                    publisher_ascenso = new Publisher_Ascenso();
-                    publisher_comprar = new Publisher_Comprar();
+        // Delegado al tipo de suscripcion actual — usado por Confiteria
+        public double ObtenerDescuento()
+        {
+            if (suscripcion is Normal n) return n.obtener_descuento();
+            if (suscripcion is Platino p) return p.obtener_descuento();
+            if (suscripcion is Oro o) return o.obtener_descuento();
+            return 0.0;
+        }
 
-                    //Suscribirme al evento
-                    publisher_ascenso.evt_ascenso += EventHandler;
-                    publisher_comprar.evt_compra += EventHandler;
+        // ASCENSO: simplificado — solo cambia la suscripcion inyectada
+        public void Ascender()
+        {
+            if (suscripcion is Normal && suscripcion.puede_ascender())
+                Suscripcion = new Platino();
+            else if (suscripcion is Platino && suscripcion.puede_ascender())
+                Suscripcion = new Oro();
+        }
 
 
-                    if (this is Normal)
-                        descuento = descuentoNormal;
-                    else if (this is Oro)
-                        descuento = descuentoPlatino;
-                    else if (this is Platino)
-                        descuento = descuentoOro;
-
-                    switch (tipocombo)
-                    {
-                        case 1:
-                            precio = Multiplex.precioCombo1;
-                            break;
-                        case 2:
-                            precio = Multiplex.precioCombo2;
-                            break;
-                        case 3:
-                            precio = Multiplex.precioCombo3;
-                            break;
-                        case 4:
-                            if (this is Platino || this is Oro)
-                                precio = Multiplex.precioCombo4;
-                            else
-                                return ("El combo 4 solo está disponible para clientes Platino y Oro.");
-                            break;
-                        case 5:
-                            if (this is Oro)
-                                precio = Multiplex.precioCombo5;
-                            else
-                                return ("El combo 5 solo está disponible para clientes Oro.");
-                            break;
-                        default:
-                            return ("Número de combo inválido.");
-                    }
-
-                    if (this is Normal)
-                    {
-                        Puntos += (byte)(precio / 10000);
-                        //Invocar el evento
-                        return publisher_ascenso.AscensoPlatino(this);
-
-                    }
-                    else if (this is Platino)
-                    {
-                        Puntos += (byte)(precio / 5000);
-                        //Invocar el evento
-                        return publisher_ascenso.AscensoOro(this);
-
-                    }
-                    else if (this is Oro)
-                    {
-                        Puntos += (byte)(precio / 2000);
-                        return publisher_comprar.Compra(this);
-                    }
-                } else return "Numero de combo invalido";
-                return "No se pudo realizar la compra";
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Error al ComprarCombo: " + ex);
-            }
-
-        } 
     }
 }
 

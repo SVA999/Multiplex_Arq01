@@ -9,7 +9,7 @@ namespace b_Multiplex.Interfaces
 {
     internal interface IAsignarSilla
     {
-        string AsignarSilla(Silla silla);
+        string AsignarSilla(ISilla silla);
 
 
     }

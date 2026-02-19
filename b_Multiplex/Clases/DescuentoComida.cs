@@ -56,18 +56,29 @@ namespace b_Multiplex.Clases
 
         public double calcular_descuento()
         {
-            throw new NotImplementedException();
+            DateTime now = DateTime.Now;
+            TimeOnly currentTime = TimeOnly.FromDateTime(now);
+
+            l_dia diaHoy = now.DayOfWeek switch
+            {
+                DayOfWeek.Monday => l_dia.lunes,
+                DayOfWeek.Tuesday => l_dia.martes,
+                DayOfWeek.Wednesday => l_dia.miercoles,
+                DayOfWeek.Thursday => l_dia.jueves,
+                DayOfWeek.Friday => l_dia.viernes,
+                DayOfWeek.Saturday => l_dia.sabado,
+                DayOfWeek.Sunday => l_dia.domingo,
+                _ => l_dia.lunes
+            };
+
+            if (diaHoy == dia && currentTime >= hora_inicio && currentTime <= hora_fin)
+                return porcentaje_descuento / 100.0;
+
+            return 0.0;
         }
 
-        public double obtener_descuento()
-        {
-            return obtener_beneficio() * (porcentaje_descuento / 100);  
-        }
-
-        public double obtener_beneficio()
-        {
-            throw new NotImplementedException();
-        }
+        // FIX: ya no depende de obtener_beneficio() — lógica propia
+        public double obtener_beneficio() => porcentaje_descuento / 100.0;
     }
 }
 

@@ -12,17 +12,15 @@ namespace b_Multiplex.Clases
 {
     public class DescuentoBoleto : IDescuentos
     {
-
-
         public enum l_dia { lunes, martes, miercoles, jueves, viernes, sabado, domingo }
         private double porcentaje_descuento;
 
         private l_dia dia;
-        private Time hora_inicio;
-        private Time hora_fin;
+        private TimeOnly hora_inicio;
+        private TimeOnly hora_fin;
 
 
-       public DescuentoBoleto(double porcentaje_descuento, l_dia dia, Time hora_inicio, Time hora_fin)
+       public DescuentoBoleto(double porcentaje_descuento, l_dia dia, TimeOnly hora_inicio, TimeOnly hora_fin)
         {
             this.porcentaje_descuento = porcentaje_descuento;
             this.dia = dia;
@@ -42,31 +40,42 @@ namespace b_Multiplex.Clases
             set { dia = value; }
         }
 
-        public Time HoraInicio
+        public TimeOnly HoraInicio
         {
             get { return hora_inicio; }
             set { hora_inicio = value; }
         }
 
-        public Time HoraFin
+        public TimeOnly HoraFin
         {
             get { return hora_fin; }
             set { hora_fin = value; }
         }
 
-        public double calcular_descuento(Silla silla)
+        public double calcular_descuento()
         {
+            DateTime now = DateTime.Now;
+            TimeOnly currentTime = TimeOnly.FromDateTime(now);
 
+            l_dia diaHoy = now.DayOfWeek switch
+            {
+                DayOfWeek.Monday => l_dia.lunes,
+                DayOfWeek.Tuesday => l_dia.martes,
+                DayOfWeek.Wednesday => l_dia.miercoles,
+                DayOfWeek.Thursday => l_dia.jueves,
+                DayOfWeek.Friday => l_dia.viernes,
+                DayOfWeek.Saturday => l_dia.sabado,
+                DayOfWeek.Sunday => l_dia.domingo,
+                _ => l_dia.lunes
+            };
+
+            // Solo aplica si es el día correcto Y está en el rango horario
+            if (diaHoy == dia && currentTime >= hora_inicio && currentTime <= hora_fin)
+                return porcentaje_descuento / 100.0;
+
+            return 0.0;
         }
 
-        public double obtener_descuento()
-        {
-
-        }
-
-        public double obtener_beneficio()
-        {
-
-        }
+        public double obtener_beneficio() => porcentaje_descuento / 100.0;
     }
 }

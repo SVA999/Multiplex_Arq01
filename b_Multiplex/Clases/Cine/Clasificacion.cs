@@ -32,14 +32,15 @@ namespace b_Multiplex.Clases.Cine
             return Etiqueta;
         }
 
-        public bool ValidarEdad()
-        {
-            
-        }
-
+        // FIX 1: implementación explícita → usa el campo privado
         string IClasificacionPelicula.Informacion()
         {
-            throw new NotImplementedException();
+            return $"[{etiqueta}] {descripcion} — Edad mínima: {(edad_minima == 0 ? "Todas las edades" : edad_minima + " años")}";
+        }
+
+        public bool ValidarEdad()
+        {
+            return edad_minima == 0;
         }
     }
 }

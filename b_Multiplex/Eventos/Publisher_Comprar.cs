@@ -25,10 +25,7 @@ namespace b_Multiplex.Eventos
                 {
                     evt_compra();
 
-                    espectador.Puntos++;
-                    
-
-                    return $"Por la compra ahora tienes: {espectador.Puntos} puntos";
+                    return $"Por la compra ahora tienes: puntos";
                 }
                 else return "Llamada al evento Compra no valida";
             }

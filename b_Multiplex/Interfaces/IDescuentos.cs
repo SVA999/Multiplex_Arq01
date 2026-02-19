@@ -11,6 +11,5 @@ namespace b_Multiplex.Interfaces
 	public interface IDescuentos : IBeneficios
     {
 		double calcular_descuento();
-		double obtener_descuento();
     }
 }

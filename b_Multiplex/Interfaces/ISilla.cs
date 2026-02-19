@@ -9,5 +9,7 @@ namespace b_Multiplex.Interfaces
     public interface ISilla
     {
         public string ObtenerTipoSilla();
+        string Posicion { get; }
+        bool Ocupada { get; set; }
     }
 }

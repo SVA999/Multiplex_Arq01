@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace b_Multiplex.Clases
 {
 
-    public class Alquiler : IServicios
+    public class Alquiler : IServicio
     {
         // =========================
         // Atributos privados
@@ -81,7 +81,7 @@ namespace b_Multiplex.Clases
         public string ObtenerServicio()
         {
             return $"Alquiler de tipo: {evento.ObtenerTipo()} | " +
-                   $"Sala: {sala.Nombre} | " +
+                   $"Sala: {sala.Id} | " +
                    $"Desde: {fecha_inicio:dd/MM/yyyy} " +
                    $"Hasta: {fecha_fin:dd/MM/yyyy} | " +
                    $"Valor: {valor}";

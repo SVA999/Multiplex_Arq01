@@ -42,7 +42,7 @@ namespace b_Multiplex.Clases
         // =========================
         // Implementación de ITipoEvento
         // =========================
-        public string obtener_tipo()
+        public string ObtenerTipo()
         {
             return $"Evento Corporativo: {descripcion} | Empresa: {empresa}";
         }

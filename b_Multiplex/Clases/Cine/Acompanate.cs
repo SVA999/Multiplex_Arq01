@@ -27,6 +27,12 @@ namespace b_Multiplex.Clases.Cine
         public int Valor { get => valor; set => valor = value; }
         internal IEstado Estado { get => estado; set => estado = value; }
 
+        
+
+        public string Posicion => $"{Fila}{Numero}";
+
+        public bool Ocupada { get => Estado.Ocupado; set => Estado.Ocupado = value; }
+
         public string ObtenerTipoSilla()
         {
             return GetType().Name;

@@ -10,58 +10,37 @@ namespace b_Multiplex.Eventos
 {
     internal class Publisher_Ascenso : IAscenso
     {
-        //Delegado que representar el evento
         internal delegate void delegado_ascenso();
-
-        //Declarar un evento
         internal event delegado_ascenso evt_ascenso;
 
-        //Atributo Publisher Compra
         internal Publisher_Comprar publisher_comprar;
+        internal void EventHandler() { }
 
-		internal void EventHandler() { }
-
-		const byte puntosPlatino = Multiplex.puntosPlatino;
+        const byte puntosPlatino = Multiplex.puntosPlatino;
         const byte puntosOro = Multiplex.puntosOro;
 
         public string AscensoPlatino(Espectador cliente)
         {
             try
             {
-                string asenso="";
+                if (evt_ascenso == null) return "Llamada al evento AscensoPlatino no valida";
 
-                //Verifica si el evento ha sido llamado / Esto impide que no se pueda llamar directamente
-                if (evt_ascenso != null)
+                evt_ascenso();
+                publisher_comprar = new Publisher_Comprar();
+                publisher_comprar.evt_compra += EventHandler;
+
+                // CAMBIO: cliente.Suscripcion is Normal (ya no "cliente is Normal")
+                if (cliente.Suscripcion is Normal)
                 {
-                    evt_ascenso();
-
-                    //EVENTO COMPRA
-                    publisher_comprar = new Publisher_Comprar();
-
-                    //Suscribirme al evento
-                    publisher_comprar.evt_compra += EventHandler;
-
-                    if (cliente is Normal && cliente.Puntos >= puntosPlatino)
-                    {
-                            //CAMBIO DE CATEGORIA 
-                        Platino nuevoCliente = new Platino(cliente.Id, cliente.Nombre, cliente.Edad, cliente.Telefono);
-                        nuevoCliente.Puntos = cliente.Puntos;                     
-                        
-                            //ELIMINA LA CLASE ANTERIOR 
-                        Multiplex.l_espectadores.RemoveAll(p => p.Id == cliente.Id);
-                        cliente = null;
-
-                            //INTRODUCE EL CLIENTE CON SU NUEVA CATEGORIA
-                        Multiplex.l_espectadores.Add(nuevoCliente);
-                        asenso += $"Puntos por Combo, {publisher_comprar.Compra(nuevoCliente)}\n\n ";
-                        asenso += $"FELICIDADES!! has sido ascendido a cliente Platino, {publisher_comprar.Compra(nuevoCliente)}";
-                        return asenso;
-                    }
-                    return $"{publisher_comprar.Compra(cliente)}, " +
-                        $"Te faltan {puntosPlatino - cliente.Puntos} puntos para llegar a Platino";
-  
+                    // CAMBIO: Ascender() solo cambia la suscripcion inyectada
+                    // Ya no se crea un nuevo objeto Espectador ni se borra de la lista
+                    cliente.Ascender();
+                    string msg = $"Puntos por Combo, {publisher_comprar.Compra(cliente)}\n\n";
+                    msg += $"FELICIDADES!! has sido ascendido a cliente Platino. {publisher_comprar.Compra(cliente)}";
+                    return msg;
                 }
-                else return "Llamada al evento AscensoPlatino no valida";
+                return $"{publisher_comprar.Compra(cliente)}, " +
+                       $"Te faltan puntos para llegar a Platino";
             }
             catch (Exception ex)
             {
@@ -73,47 +52,27 @@ namespace b_Multiplex.Eventos
         {
             try
             {
-                string asenso = "";
+                if (evt_ascenso == null) return "Llamada al evento AscensoOro no valida";
 
-                //Verifica si el evento ha sido llamado / Esto impide que no se pueda llamar directamente
-                if (evt_ascenso != null)
+                evt_ascenso();
+                publisher_comprar = new Publisher_Comprar();
+                publisher_comprar.evt_compra += EventHandler;
+
+                // CAMBIO: cliente.Suscripcion is Platino (ya no "cliente is Platino")
+                if (cliente.Suscripcion is Platino)
                 {
-                    evt_ascenso();
-
-                    //EVENTO COMPRA
-                    publisher_comprar = new Publisher_Comprar();
-
-                    //Suscribirme al evento
-                    publisher_comprar.evt_compra += EventHandler;
-
-                    if (cliente is Platino && cliente.Puntos >= puntosOro)
-                    {
-
-                        //CAMBIO DE CATEGORIA 
-                        Oro nuevoCliente = new Oro(cliente.Id, cliente.Nombre, cliente.Edad, cliente.Telefono);
-                        nuevoCliente.Puntos = cliente.Puntos;
-
-                        //ELIMINA LA CLASE ANTERIOR 
-                        Multiplex.l_espectadores.RemoveAll(p => p.Id == cliente.Id);
-                        cliente = null;
-
-                        //INTRODUCE EL CLIENTE CON SU NUEVA CATEGORIA
-                        Multiplex.l_espectadores.Add(nuevoCliente);
-                        asenso += $"Puntos por Combo, {publisher_comprar.Compra(nuevoCliente)}\n\n ";
-                        asenso += $"FELICIDADES!! has sido ascendido a cliente Oro, {publisher_comprar.Compra(nuevoCliente)}";
-                        return asenso;
-
-                    }
-                    return $"{publisher_comprar.Compra(cliente)}, " +
-                        $"Te faltan {puntosOro - cliente.Puntos} puntos para llegar a Oro";
+                    cliente.Ascender();
+                    string msg = $"Puntos por Combo, {publisher_comprar.Compra(cliente)}\n\n";
+                    msg += $"FELICIDADES!! has sido ascendido a cliente Oro. {publisher_comprar.Compra(cliente)}";
+                    return msg;
                 }
-                else return "Llamada al evento AscensoOro no valida";
+                return $"{publisher_comprar.Compra(cliente)}, " +
+                       $"Te faltan puntos para llegar a Oro";
             }
             catch (Exception ex)
             {
                 throw new Exception("Error en AscensoOro: " + ex);
             }
         }
-
     }
 }

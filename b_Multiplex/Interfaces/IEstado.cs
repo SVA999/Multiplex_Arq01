@@ -8,6 +8,6 @@ namespace b_Multiplex.Interfaces
 {
     public interface IEstado
     {
-        public bool PuedeSeleccionarse();
+        public bool Ocupado { get; set; }
     }
 }

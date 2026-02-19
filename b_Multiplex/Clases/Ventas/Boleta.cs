@@ -1,9 +1,11 @@
 ﻿using b_Multiplex.Clases.Cine;
+using b_Multiplex.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 
 namespace b_Multiplex.Clases.Ventas
 {
@@ -12,10 +14,10 @@ namespace b_Multiplex.Clases.Ventas
         private long id;
         private Espectador espectador;
         private Funcion funcion;
-        private Silla silla;
+        private ISilla silla;
         private int valor;
 
-        public Boleta(long id, Espectador espectador, Funcion funcion, Silla silla, int valor)
+        public Boleta(long id, Espectador espectador, Funcion funcion, ISilla silla, int valor)
         {
             Id = id;
             Espectador = espectador;
@@ -27,7 +29,7 @@ namespace b_Multiplex.Clases.Ventas
         public long Id { get => id; set => id = value; }
         public Espectador Espectador { get => espectador; set => espectador = value; }
         public Funcion Funcion { get => funcion; set => funcion = value; }
-        public Silla Silla { get => silla; set => silla = value; }
+        public ISilla Silla { get => silla; set => silla = value; }
         public int Valor { get => valor; set => valor = value; }
 
         public string ObtenerInfo()

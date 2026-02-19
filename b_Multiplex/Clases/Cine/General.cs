@@ -14,6 +14,7 @@ namespace b_Multiplex.Clases.Cine
         private byte numero;
         private int valor;
         private IEstado estado;
+        public string Posicion => $"{Fila}{Numero}";
 
         public General(string fila, byte numero, int valor, IEstado estado)
         {
@@ -27,6 +28,8 @@ namespace b_Multiplex.Clases.Cine
         public byte Numero { get => numero; set => numero = value; }
         public int Valor { get => valor; set => valor = value; }
         internal IEstado Estado { get => estado; set => estado = value; }
+
+        public bool Ocupada { get => Estado.Ocupado; set => Estado.Ocupado = value; }
 
         public string ObtenerTipoSilla()
         {
